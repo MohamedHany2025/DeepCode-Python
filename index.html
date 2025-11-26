@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="asstss/logo2.jpg" type="image/x-icon">
+    <title>DeepCode Python - Advanced Python Tutorials & Projects</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>DeepCode<span class="highlight">Python</span></span>
+            </div>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="ar" title="العربية">العربية</button>
+                <span class="lang-separator">|</span>
+                <button class="lang-btn" data-lang="en" title="English">English</button>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link" data-en="Home" data-ar="الرئيسية">الرئيسية</a></li>
+                <li><a href="#about" class="nav-link" data-en="About" data-ar="حول">حول</a></li>
+                <li><a href="#projects" class="nav-link" data-en="Projects" data-ar="المشاريع">المشاريع</a></li>
+                <li><a href="#tutorials" class="nav-link" data-en="Tutorials" data-ar="دروس">دروس</a></li>
+                <li><a href="#contact" class="nav-link" data-en="Contact" data-ar="تواصل">تواصل</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero / Home Section -->
+    <section id="home" class="hero">
+        <div class="glitch-background"></div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="asstss/logo2.jpg" alt="DeepCode Python Logo" width="200px" height="200px">
+            </div>
+            <h1 class="glitch" data-text="DeepCode Python">DeepCode Python</h1>
+            <p class="hero-subtitle" data-en="Master Advanced Python. Build Extraordinary Things." data-ar="أتقن بايثون المتقدم. بناء أشياء غير عادية.">أتقن بايثون المتقدم. بناء أشياء غير عادية.</p>
+            <p class="hero-description" data-en="Dive deep into Python programming with cutting-edge tutorials, real-world projects, and professional-grade code practices." data-ar="الغوص بعمق في برمجة Python مع البرامج التعليمية المتقدمة والمشاريع الحقيقية وممارسات الكود بمستوى احترافي.">الغوص بعمق في برمجة Python مع البرامج التعليمية المتقدمة والمشاريع الحقيقية وممارسات الكود بمستوى احترافي.</p>
+            
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary" data-en="Explore Projects" data-ar="استكشف المشاريع">استكشف المشاريع</a>
+                <a href="https://www.youtube.com/@DeepCode-Python" target="_blank" class="btn btn-secondary" data-en="Subscribe Now" data-ar="اشترك الآن">
+                    <i class="fab fa-youtube"></i> <span>اشترك الآن</span>
+                </a>
+            </div>
+
+            <div class="social-links-hero">
+                <a href="https://www.youtube.com/@DeepCode-Python" target="_blank" rel="noopener" class="social-icon" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://github.com/MohamedHany" target="_blank" rel="noopener" class="social-icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mohamed-hany-6979bb333" target="_blank" rel="noopener" class="social-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-video">
+            <div class="video-placeholder">
+                <i class="fas fa-play"></i>
+                <p>Latest Video</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-en="About DeepCode Python" data-ar="حول DeepCode Python">حول DeepCode Python</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-en="Who We Are" data-ar="من نحن">من نحن</h3>
+                    <p data-en="DeepCode Python is dedicated to teaching advanced Python programming techniques, design patterns, and real-world development practices. We believe in code quality, clean architecture, and continuous learning." data-ar="DeepCode Python مكرسة لتعليم تقنيات البرمجة بلغة Python المتقدمة وأنماط التصميم وممارسات التطوير الحقيقية. نؤمن بجودة الكود والعمارة النظيفة والتعلم المستمر.">DeepCode Python مكرسة لتعليم تقنيات البرمجة بلغة Python المتقدمة وأنماط التصميم وممارسات التطوير الحقيقية. نؤمن بجودة الكود والعمارة النظيفة والتعلم المستمر.</p>
+                    
+                    <h3 data-en="Our Mission" data-ar="مهمتنا">مهمتنا</h3>
+                    <p data-en="To empower developers worldwide with in-depth Python knowledge, practical skills, and industry best practices through comprehensive tutorials, hands-on projects, and expert guidance." data-ar="تمكين المطورين في جميع أنحاء العالم بمعرفة Python العميقة والمهارات العملية وأفضل الممارسات الصناعية من خلال البرامج التعليمية الشاملة والمشاريع العملية والتوجيه الخبير.">تمكين المطورين في جميع أنحاء العالم بمعرفة Python العميقة والمهارات العملية وأفضل الممارسات الصناعية من خلال البرامج التعليمية الشاملة والمشاريع العملية والتوجيه الخبير.</p>
+                    
+                    <h3 data-en="What We Cover" data-ar="ما نغطيه">ما نغطيه</h3>
+                    <ul class="features-list">
+                        <li><span class="icon">▸</span> <span data-en="Advanced Python Syntax & Concepts" data-ar="بناء جملة Python المتقدم والمفاهيم">بناء جملة Python المتقدم والمفاهيم</span></li>
+                        <li><span class="icon">▸</span> <span data-en="Data Structures & Algorithms" data-ar="هياكل البيانات والخوارزميات">هياكل البيانات والخوارزميات</span></li>
+                        <li><span class="icon">▸</span> <span data-en="Web Development (Django, Flask)" data-ar="تطوير الويب (Django و Flask)">تطوير الويب (Django و Flask)</span></li>
+                        <li><span class="icon">▸</span> <span data-en="Machine Learning & AI" data-ar="التعلم الآلي والذكاء الاصطناعي">التعلم الآلي والذكاء الاصطناعي</span></li>
+                        <li><span class="icon">▸</span> <span data-en="Automation & Scripting" data-ar="الأتمتة والبرمجة النصية">الأتمتة والبرمجة النصية</span></li>
+                        <li><span class="icon">▸</span> <span data-en="Software Architecture & Design Patterns" data-ar="معمارية البرامج وأنماط التصميم">معمارية البرامج وأنماط التصميم</span></li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="about-image">
+                        <img src="asstss/tech-atom.svg" alt="Advanced Python Technology" width="250" height="250">
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">500K+</div>
+                        <div class="stat-label" data-en="Subscribers" data-ar="المشتركون">المشتركون</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label" data-en="Tutorials" data-ar="دروس">دروس</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label" data-en="Projects" data-ar="مشاريع">مشاريع</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">8 Years</div>
+                        <div class="stat-label" data-en="Experience" data-ar="سنوات الخبرة">سنوات الخبرة</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / Portfolio Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-en="Featured Projects" data-ar="المشاريع المميزة">المشاريع المميزة</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all" data-en="All" data-ar="الكل">الكل</button>
+                <button class="filter-btn" data-filter="web" data-en="Web" data-ar="ويب">ويب</button>
+                <button class="filter-btn" data-filter="automation" data-en="Automation" data-ar="الأتمتة">الأتمتة</button>
+                <button class="filter-btn" data-filter="ai" data-en="AI/ML" data-ar="ذكاء اصطناعي">ذكاء اصطناعي</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="codes/fastapi_dashboard.py" class="btn btn-small" data-en="View Code" data-ar="عرض الكود">عرض الكود</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-en="FastAPI Dashboard" data-ar="لوحة تحكم FastAPI">لوحة تحكم FastAPI</h3>
+                        <p data-en="High-performance REST API with real-time data visualization and advanced authentication mechanisms." data-ar="واجهة برمجية REST عالية الأداء مع تصور البيانات في الوقت الفعلي وآليات المصادقة المتقدمة.">واجهة برمجية REST عالية الأداء مع تصور البيانات في الوقت الفعلي وآليات المصادقة المتقدمة.</p>
+                        <div class="project-tags">
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">React</span>
+                        </div>
+                        <a href="codes/PROJECT_DOCUMENTATION.md" target="_blank" class="project-link" data-en="Documentation" data-ar="التوثيق">
+                            <i class="fas fa-book"></i> التوثيق
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="automation">
+                    <div class="project-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="codes/web_scraper_pro.py" class="btn btn-small" data-en="View Code" data-ar="عرض الكود">عرض الكود</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-en="Web Scraper Pro" data-ar="أداة الكشف الذكية">أداة الكشف الذكية</h3>
+                        <p data-en="Intelligent web scraping tool with proxy support, rate limiting, and data transformation pipelines." data-ar="أداة كشط ذكية مع دعم الوكيل وتحديد المعدل وخطوط أنابيب تحويل البيانات.">أداة كشط ذكية مع دعم الوكيل وتحديد المعدل وخطوط أنابيب تحويل البيانات.</p>
+                        <div class="project-tags">
+                            <span class="tag">BeautifulSoup</span>
+                            <span class="tag">Selenium</span>
+                            <span class="tag">Async</span>
+                        </div>
+                        <a href="codes/PROJECT_DOCUMENTATION.md" target="_blank" class="project-link" data-en="Documentation" data-ar="التوثيق">
+                            <i class="fas fa-book"></i> التوثيق
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="codes/ml_image_classifier.py" class="btn btn-small" data-en="View Code" data-ar="عرض الكود">عرض الكود</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-en="ML Image Classifier" data-ar="مصنف الصور بالتعلم الآلي">مصنف الصور بالتعلم الآلي</h3>
+                        <p data-en="Deep learning model for image classification with custom training pipeline and inference optimization." data-ar="نموذج تعلم عميق لتصنيف الصور مع خط أنابيب تدريب مخصص وتحسين الاستدلال.">نموذج تعلم عميق لتصنيف الصور مع خط أنابيب تدريب مخصص وتحسين الاستدلال.</p>
+                        <div class="project-tags">
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">CNN</span>
+                            <span class="tag">OpenCV</span>
+                        </div>
+                        <a href="codes/PROJECT_DOCUMENTATION.md" target="_blank" class="project-link" data-en="Documentation" data-ar="التوثيق">
+                            <i class="fas fa-book"></i> التوثيق
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="codes/orm_framework.py" class="btn btn-small" data-en="View Code" data-ar="عرض الكود">عرض الكود</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-en="ORM Framework" data-ar="إطار عمل ORM">إطار عمل ORM</h3>
+                        <p data-en="Lightweight but powerful Object-Relational Mapping library with query optimization and migration tools." data-ar="مكتبة تعيين العلاقات بين الكائنات والقواعد البيانات خفيفة الوزن وقوية مع تحسين الاستعلام وأدوات الهجرة.">مكتبة تعيين العلاقات بين الكائنات والقواعد البيانات خفيفة الوزن وقوية مع تحسين الاستعلام وأدوات الهجرة.</p>
+                        <div class="project-tags">
+                            <span class="tag">SQLAlchemy</span>
+                            <span class="tag">Async</span>
+                            <span class="tag">Type Hints</span>
+                        </div>
+                        <a href="codes/PROJECT_DOCUMENTATION.md" target="_blank" class="project-link" data-en="Documentation" data-ar="التوثيق">
+                            <i class="fas fa-book"></i> التوثيق
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="automation">
+                    <div class="project-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="codes/deployment_automation.py" class="btn btn-small" data-en="View Code" data-ar="عرض الكود">عرض الكود</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-en="Deployment Automation" data-ar="أتمتة النشر">أتمتة النشر</h3>
+                        <p data-en="CI/CD pipeline automation tool with containerization, health checks, and rollback capabilities." data-ar="أداة أتمتة خط أنابيب التكامل والنشر المستمر مع الحاويات والفحوصات الصحية وقدرات التراجع.">أداة أتمتة خط أنابيب التكامل والنشر المستمر مع الحاويات والفحوصات الصحية وقدرات التراجع.</p>
+                        <div class="project-tags">
+                            <span class="tag">Docker</span>
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">GitOps</span>
+                        </div>
+                        <a href="codes/PROJECT_DOCUMENTATION.md" target="_blank" class="project-link" data-en="Documentation" data-ar="التوثيق">
+                            <i class="fas fa-book"></i> التوثيق
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="codes/nlp_text_analyzer.py" class="btn btn-small" data-en="View Code" data-ar="عرض الكود">عرض الكود</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-en="NLP Text Analyzer" data-ar="محلل النصوص بمعالجة اللغة الطبيعية">محلل النصوص بمعالجة اللغة الطبيعية</h3>
+                        <p data-en="Advanced natural language processing system with sentiment analysis, entity recognition, and summarization." data-ar="نظام معالجة لغة طبيعية متقدم مع تحليل المشاعر والتعرف على الكيانات والملخص التلقائي.">نظام معالجة لغة طبيعية متقدم مع تحليل المشاعر والتعرف على الكيانات والملخص التلقائي.</p>
+                        <div class="project-tags">
+                            <span class="tag">NLTK</span>
+                            <span class="tag">spaCy</span>
+                            <span class="tag">Transformers</span>
+                        </div>
+                        <a href="codes/PROJECT_DOCUMENTATION.md" target="_blank" class="project-link" data-en="Documentation" data-ar="التوثيق">
+                            <i class="fas fa-book"></i> التوثيق
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorials / Blog Section -->
+    <section id="tutorials" class="tutorials">
+        <div class="container">
+            <h2 class="section-title" data-en="Latest Tutorials & Guides" data-ar="أحدث الدروس والأدلة">أحدث الدروس والأدلة</h2>
+            
+            <div class="tutorials-grid">
+                <!-- Tutorial 1 -->
+                <div class="tutorial-card">
+                    <div class="tutorial-header">
+                        <span class="tutorial-category" data-en="Advanced Concepts" data-ar="مفاهيم متقدمة">مفاهيم متقدمة</span>
+                        <span class="tutorial-date" data-en="Nov 2025" data-ar="نوفمبر 2025">نوفمبر 2025</span>
+                    </div>
+                    <h3 data-en="Mastering Async/Await in Python" data-ar="إتقان البرمجة غير المتزامنة في Python">إتقان البرمجة غير المتزامنة في Python</h3>
+                    <p data-en="Deep dive into asynchronous programming with asyncio, understanding event loops, coroutines, and building high-performance concurrent applications." data-ar="غوص عميق في البرمجة غير المتزامنة مع asyncio وفهم حلقات الأحداث والمراجع الروتينية وبناء التطبيقات المتزامنة عالية الأداء.">غوص عميق في البرمجة غير المتزامنة مع asyncio وفهم حلقات الأحداث والمراجع الروتينية وبناء التطبيقات المتزامنة عالية الأداء.</p>
+                    <div class="tutorial-snippet">
+                        <code>async def fetch_data(url):<br>&nbsp;&nbsp;async with aiohttp.ClientSession() as session:<br>&nbsp;&nbsp;&nbsp;&nbsp;async with session.get(url) as resp:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return await resp.json()</code>
+                    </div>
+                    <a href="codes/TUTORIALS_AND_GUIDES.md" target="_blank" class="read-more" data-en="Read Tutorial →" data-ar="اقرأ الدرس →">اقرأ الدرس →</a>
+                </div>
+
+                <!-- Tutorial 2 -->
+                <div class="tutorial-card">
+                    <div class="tutorial-header">
+                        <span class="tutorial-category" data-en="Design Patterns" data-ar="أنماط التصميم">أنماط التصميم</span>
+                        <span class="tutorial-date" data-en="Nov 2025" data-ar="نوفمبر 2025">نوفمبر 2025</span>
+                    </div>
+                    <h3 data-en="Factory & Builder Patterns Explained" data-ar="شرح أنماط Factory و Builder">شرح أنماط Factory و Builder</h3>
+                    <p data-en="Learn how to implement creational design patterns to write flexible, maintainable code that scales with complex object creation requirements." data-ar="تعلم كيفية تطبيق أنماط التصميم الإنشائية لكتابة كود مرن وسهل الصيانة يتسع مع متطلبات الإنشاء المعقدة للكائنات.">تعلم كيفية تطبيق أنماط التصميم الإنشائية لكتابة كود مرن وسهل الصيانة يتسع مع متطلبات الإنشاء المعقدة للكائنات.</p>
+                    <div class="tutorial-snippet">
+                        <code>class DatabaseFactory:<br>&nbsp;&nbsp;@staticmethod<br>&nbsp;&nbsp;def create_db(db_type):<br>&nbsp;&nbsp;&nbsp;&nbsp;if db_type == 'postgres':<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return PostgresDB()</code>
+                    </div>
+                    <a href="codes/TUTORIALS_AND_GUIDES.md" target="_blank" class="read-more" data-en="Read Tutorial →" data-ar="اقرأ الدرس →">اقرأ الدرس →</a>
+                </div>
+
+                <!-- Tutorial 3 -->
+                <div class="tutorial-card">
+                    <div class="tutorial-header">
+                        <span class="tutorial-category" data-en="Performance Optimization" data-ar="تحسين الأداء">تحسين الأداء</span>
+                        <span class="tutorial-date" data-en="Oct 2025" data-ar="أكتوبر 2025">أكتوبر 2025</span>
+                    </div>
+                    <h3 data-en="Profiling & Optimizing Python Code" data-ar="تحليل وتحسين أكواد Python">تحليل وتحسين أكواد Python</h3>
+                    <p data-en="Discover profiling tools, bottleneck identification, and optimization techniques to make your Python applications lightning-fast." data-ar="اكتشف أدوات التحليل وتحديد الاختناقات وتقنيات التحسين لجعل تطبيقات Python الخاصة بك سريعة جداً.">اكتشف أدوات التحليل وتحديد الاختناقات وتقنيات التحسين لجعل تطبيقات Python الخاصة بك سريعة جداً.</p>
+                    <div class="tutorial-snippet">
+                        <code>import cProfile<br>cProfile.run('main()')<br><br># Results show:<br># Calls, time per call, cumulative</code>
+                    </div>
+                    <a href="codes/TUTORIALS_AND_GUIDES.md" target="_blank" class="read-more" data-en="Read Tutorial →" data-ar="اقرأ الدرس →">اقرأ الدرس →</a>
+                </div>
+
+                <!-- Tutorial 4 -->
+                <div class="tutorial-card">
+                    <div class="tutorial-header">
+                        <span class="tutorial-category" data-en="Web Development" data-ar="تطوير الويب">تطوير الويب</span>
+                        <span class="tutorial-date" data-en="Oct 2025" data-ar="أكتوبر 2025">أكتوبر 2025</span>
+                    </div>
+                    <h3 data-en="Building Scalable APIs with FastAPI" data-ar="بناء واجهات برمجية قابلة للتوسع مع FastAPI">بناء واجهات برمجية قابلة للتوسع مع FastAPI</h3>
+                    <p data-en="Create modern, fast APIs with automatic documentation, data validation, and built-in security features using FastAPI framework." data-ar="إنشاء واجهات برمجية حديثة وسريعة مع التوثيق التلقائي والتحقق من البيانات والميزات الأمنية المدمجة باستخدام إطار عمل FastAPI.">إنشاء واجهات برمجية حديثة وسريعة مع التوثيق التلقائي والتحقق من البيانات والميزات الأمنية المدمجة باستخدام إطار عمل FastAPI.</p>
+                    <div class="tutorial-snippet">
+                        <code>@app.post("/items/")<br>async def create_item(item: Item):<br>&nbsp;&nbsp;return {<br>&nbsp;&nbsp;&nbsp;&nbsp;"id": 1,<br>&nbsp;&nbsp;&nbsp;&nbsp;"item": item<br>&nbsp;&nbsp;}</code>
+                    </div>
+                    <a href="codes/TUTORIALS_AND_GUIDES.md" target="_blank" class="read-more" data-en="Read Tutorial →" data-ar="اقرأ الدرس →">اقرأ الدرس →</a>
+                </div>
+
+                <!-- Tutorial 5 -->
+                <div class="tutorial-card">
+                    <div class="tutorial-header">
+                        <span class="tutorial-category" data-en="Data Science" data-ar="علم البيانات">علم البيانات</span>
+                        <span class="tutorial-date" data-en="Oct 2025" data-ar="أكتوبر 2025">أكتوبر 2025</span>
+                    </div>
+                    <h3 data-en="From Pandas to Production ML Models" data-ar="من Pandas إلى نماذج التعلم الآلي الإنتاجية">من Pandas إلى نماذج التعلم الآلي الإنتاجية</h3>
+                    <p data-en="Learn the complete pipeline from data exploration with Pandas to training, evaluating, and deploying machine learning models." data-ar="تعلم المسار الكامل من استكشاف البيانات مع Pandas إلى تدريب وتقييم ونشر نماذج التعلم الآلي.">تعلم المسار الكامل من استكشاف البيانات مع Pandas إلى تدريب وتقييم ونشر نماذج التعلم الآلي.</p>
+                    <div class="tutorial-snippet">
+                        <code>df = pd.read_csv('data.csv')<br>X_train, X_test = train_test_split(df)<br>model = RandomForest().fit(X_train)</code>
+                    </div>
+                    <a href="codes/TUTORIALS_AND_GUIDES.md" target="_blank" class="read-more" data-en="Read Tutorial →" data-ar="اقرأ الدرس →">اقرأ الدرس →</a>
+                </div>
+
+                <!-- Tutorial 6 -->
+                <div class="tutorial-card">
+                    <div class="tutorial-header">
+                        <span class="tutorial-category" data-en="Best Practices" data-ar="أفضل الممارسات">أفضل الممارسات</span>
+                        <span class="tutorial-date" data-en="Sep 2025" data-ar="سبتمبر 2025">سبتمبر 2025</span>
+                    </div>
+                    <h3 data-en="Writing Testable, Clean Python Code" data-ar="كتابة أكواد Python نظيفة وقابلة للاختبار">كتابة أكواد Python نظيفة وقابلة للاختبار</h3>
+                    <p data-en="Master unit testing, mocking, TDD methodology, and code structure principles that make your codebase maintainable and robust." data-ar="أتقن اختبار الوحدة والمحاكاة ومنهجية التطوير المدفوع بالاختبارات ومبادئ هيكل الكود التي تجعل قاعدة الكود الخاصة بك سهلة الصيانة وقوية.">أتقن اختبار الوحدة والمحاكاة ومنهجية التطوير المدفوع بالاختبارات ومبادئ هيكل الكود التي تجعل قاعدة الكود الخاصة بك سهلة الصيانة وقوية.</p>
+                    <div class="tutorial-snippet">
+                        <code>def test_user_creation():<br>&nbsp;&nbsp;user = User("John", "Doe")<br>&nbsp;&nbsp;assert user.full_name == "John Doe"</code>
+                    </div>
+                    <a href="codes/TUTORIALS_AND_GUIDES.md" target="_blank" class="read-more" data-en="Read Tutorial →" data-ar="اقرأ الدرس →">اقرأ الدرس →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources" style="background-color: #f5f5f5; padding: 60px 20px;">
+        <div class="container">
+            <h2 class="section-title" data-en="Additional Resources" data-ar="موارد إضافية">موارد إضافية</h2>
+            
+            <div class="resources-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px;">
+                <div class="resource-card" style="background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <i class="fas fa-book" style="font-size: 32px; color: #2196F3; margin-bottom: 15px;"></i>
+                    <h3 data-en="Quick Reference" data-ar="مرجع سريع">مرجع سريع</h3>
+                    <p data-en="Cheat sheets and quick lookup guides for all projects">أوراق غش ومراجع سريعة لجميع المشاريع</p>
+                    <a href="codes/QUICK_REFERENCE_GUIDE.md" target="_blank" class="btn" style="background: #2196F3; color: white; padding: 8px 16px; border-radius: 4px; text-decoration: none; display: inline-block;">اضغط هنا</a>
+                </div>
+                
+                <div class="resource-card" style="background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <i class="fas fa-star" style="font-size: 32px; color: #FF9800; margin-bottom: 15px;"></i>
+                    <h3 data-en="Best Practices" data-ar="أفضل الممارسات">أفضل الممارسات</h3>
+                    <p data-en="Professional standards and coding guidelines">معايير احترافية وإرشادات الترميز</p>
+                    <a href="codes/BEST_PRACTICES_GUIDE.md" target="_blank" class="btn" style="background: #FF9800; color: white; padding: 8px 16px; border-radius: 4px; text-decoration: none; display: inline-block;">اضغط هنا</a>
+                </div>
+                
+                <div class="resource-card" style="background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <i class="fas fa-cube" style="font-size: 32px; color: #4CAF50; margin-bottom: 15px;"></i>
+                    <h3 data-en="Project Docs" data-ar="توثيق المشاريع">توثيق المشاريع</h3>
+                    <p data-en="Detailed documentation for each project">توثيق مفصل لكل مشروع</p>
+                    <a href="codes/PROJECT_DOCUMENTATION.md" target="_blank" class="btn" style="background: #4CAF50; color: white; padding: 8px 16px; border-radius: 4px; text-decoration: none; display: inline-block;">اضغط هنا</a>
+                </div>
+                
+                <div class="resource-card" style="background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <i class="fas fa-code" style="font-size: 32px; color: #9C27B0; margin-bottom: 15px;"></i>
+                    <h3 data-en="README" data-ar="دليل البدء">دليل البدء</h3>
+                    <p data-en="Main documentation and getting started guide">التوثيق الرئيسي وإرشادات البدء</p>
+                    <a href="codes/README.md" target="_blank" class="btn" style="background: #9C27B0; color: white; padding: 8px 16px; border-radius: 4px; text-decoration: none; display: inline-block;">اضغط هنا</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-en="Get In Touch" data-ar="تواصل معنا">تواصل معنا</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-en="Connect With Us" data-ar="تواصل معنا">تواصل معنا</h3>
+                    <p data-en="Have questions? Want to collaborate? Reach out through any of these channels:" data-ar="هل لديك أسئلة؟ هل تريد التعاون؟ تواصل معنا من خلال أي من هذه القنوات:">هل لديك أسئلة؟ هل تريد التعاون؟ تواصل معنا من خلال أي من هذه القنوات:</p>
+                    
+                    <div class="contact-links">
+                        <div class="contact-item">
+                            <i class="fab fa-youtube"></i>
+                            <div>
+                                <h4 data-en="YouTube" data-ar="يوتيوب">يوتيوب</h4>
+                                <p data-en="Subscribe for new tutorials every week" data-ar="اشترك للحصول على دروس جديدة كل أسبوع">اشترك للحصول على دروس جديدة كل أسبوع</p>
+                                <a href="https://www.youtube.com/@DeepCode-Python" target="_blank" rel="noopener" data-en="Visit Channel" data-ar="زيارة القناة">زيارة القناة</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4 data-en="GitHub" data-ar="جيتهاب">جيتهاب</h4>
+                                <p data-en="Explore all project source code" data-ar="استكشف جميع أكواد المشاريع">استكشف جميع أكواد المشاريع</p>
+                                <a href="https://github.com/MohamedHany" target="_blank" rel="noopener" data-en="View Repos" data-ar="عرض المستودعات">عرض المستودعات</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4 data-en="LinkedIn" data-ar="لينكد ان">لينكد ان</h4>
+                                <p data-en="Connect with me professionally" data-ar="تواصل معي احترافياً">تواصل معي احترافياً</p>
+                                <a href="https://www.linkedin.com/in/mohamed-hany-6979bb333" target="_blank" rel="noopener" data-en="Visit Profile" data-ar="زيارة الملف الشخصي">زيارة الملف الشخصي</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fab fa-telegram"></i>
+                            <div>
+                                <h4 data-en="Telegram" data-ar="تيليجرام">تيليجرام</h4>
+                                <p data-en="Join our community and get instant support" data-ar="انضم إلى مجتمعنا واحصل على دعم فوري">انضم إلى مجتمعنا واحصل على دعم فوري</p>
+                                <a href="https://t.me/MohamedHanyEzaldeen" target="_blank" rel="noopener" data-en="Join Community" data-ar="انضم للمجتمع">انضم للمجتمع</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4 data-en="Email" data-ar="بريد إلكتروني">بريد إلكتروني</h4>
+                                <p data-en="For business inquiries & partnerships" data-ar="للاستفسارات التجارية والمشاركات">للاستفسارات التجارية والمشاركات</p>
+                                <a href="mailto:xspeedo909@gmail.com" data-en="Send Email" data-ar="إرسال بريد">إرسال بريد</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>DeepCode Python</h4>
+                    <p data-en="Master Python programming and build extraordinary applications." data-ar="أتقن برمجة Python وبناء تطبيقات غير عادية.">أتقن برمجة Python وبناء تطبيقات غير عادية.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-ar="روابط سريعة">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home" data-en="Home" data-ar="الرئيسية">الرئيسية</a></li>
+                        <li><a href="#about" data-en="About" data-ar="حول">حول</a></li>
+                        <li><a href="#projects" data-en="Projects" data-ar="المشاريع">المشاريع</a></li>
+                        <li><a href="#tutorials" data-en="Tutorials" data-ar="دروس">دروس</a></li>
+                        <li><a href="#contact" data-en="Contact" data-ar="تواصل">تواصل</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Resources" data-ar="موارد">موارد</h4>
+                    <ul>
+                        <li><a href="#" data-en="Python Documentation" data-ar="توثيق Python">توثيق Python</a></li>
+                        <li><a href="#" data-en="Best Practices Guide" data-ar="دليل أفضل الممارسات">دليل أفضل الممارسات</a></li>
+                        <li><a href="#" data-en="Code Snippets" data-ar="مقاطع الكود">مقاطع الكود</a></li>
+                        <li><a href="#" data-en="Community Forum" data-ar="منتدى المجتمع">منتدى المجتمع</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Follow Us" data-ar="تابعنا">تابعنا</h4>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@DeepCode-Python" target="_blank" rel="noopener" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://github.com/MohamedHany" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mohamed-hany-6979bb333" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://t.me/MohamedHanyEzaldeen" target="_blank" rel="noopener" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-en="© 2025 DeepCode Python. All rights reserved. | Built with ❤ for developers." data-ar="© 2025 DeepCode Python. جميع الحقوق محفوظة. | تم بناؤه بحب للمطورين.">© 2025 DeepCode Python. جميع الحقوق محفوظة. | تم بناؤه بحب للمطورين.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
