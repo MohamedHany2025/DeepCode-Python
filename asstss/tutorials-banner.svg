@@ -1,0 +1,57 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tutGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050810;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0a0e27;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1f3a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff4757;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff4757;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ff4757;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#tutGrad)" />
+
+  <!-- Glow Effects -->
+  <circle cx="100" cy="100" r="150" fill="url(#glow)" />
+  <circle cx="700" cy="300" r="120" fill="url(#glow)" />
+
+  <!-- Code Blocks -->
+  <g id="code-1">
+    <rect x="30" y="80" width="280" height="200" fill="none" stroke="url(#redGrad)" stroke-width="2" rx="8" />
+    <rect x="30" y="80" width="280" height="35" fill="#0a0e27" rx="8" />
+    <text x="50" y="103" font-family="'Courier Prime', monospace" font-size="12" font-weight="bold" fill="#00ff00">python_tutorial.py</text>
+    
+    <!-- Code Lines -->
+    <text x="55" y="140" font-family="'Courier Prime', monospace" font-size="11" fill="#00ff00">def advanced_concept():</text>
+    <text x="75" y="160" font-family="'Courier Prime', monospace" font-size="11" fill="#00ffff">    """Learn async/await"""</text>
+    <text x="75" y="180" font-family="'Courier Prime', monospace" font-size="11" fill="#ffaa00">    return await fetch_data()</text>
+    <text x="55" y="200" font-family="'Courier Prime', monospace" font-size="11" fill="#ff4757"># Execute now!</text>
+    <text x="55" y="220" font-family="'Courier Prime', monospace" font-size="11" fill="#888">>>> advanced_concept()</text>
+  </g>
+
+  <!-- Video Icon -->
+  <g id="video-icon">
+    <circle cx="400" cy="200" r="60" fill="none" stroke="#ff4757" stroke-width="3" />
+    <polygon points="380,180 380,220 430,200" fill="#ff4757" />
+  </g>
+
+  <!-- Text Content -->
+  <g id="text">
+    <text x="50" y="320" font-family="'Courier Prime', monospace" font-size="20" font-weight="bold" fill="#e0e0e0">Master Python</text>
+    <text x="50" y="350" font-family="'Courier Prime', monospace" font-size="18" fill="url(#redGrad)">Advanced Tutorials</text>
+    <text x="500" y="320" font-size="14" fill="#a0a0a0">Watch comprehensive video</text>
+    <text x="500" y="340" font-size="14" fill="#a0a0a0">guides and live coding sessions</text>
+    <text x="500" y="360" font-size="12" fill="#00ffff">▶ Click to watch now</text>
+  </g>
+
+  <!-- Accent Elements -->
+  <line x1="30" y1="305" x2="320" y2="305" stroke="url(#redGrad)" stroke-width="2" />
+  <rect x="490" y="295" width="280" height="120" fill="none" stroke="#00ffff" stroke-width="2" rx="8" opacity="0.5" />
+</svg>

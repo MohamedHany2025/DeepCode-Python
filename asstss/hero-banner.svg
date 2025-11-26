@@ -1,0 +1,161 @@
+<svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap');
+      .code-font { font-family: 'Courier Prime', monospace; font-weight: 700; }
+      .glow { filter: drop-shadow(0 0 10px #ff4757) drop-shadow(0 0 20px rgba(231, 76, 60, 0.5)); }
+      .floating { animation: float 6s ease-in-out infinite; }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+      }
+      .scanline {
+        background: repeating-linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.05),
+          rgba(255, 255, 255, 0.05) 2px,
+          rgba(255, 255, 255, 0) 2px,
+          rgba(255, 255, 255, 0) 4px
+        );
+        mix-blend-mode: overlay;
+      }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050810;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0a0e27;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1f3a;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff4757;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:1" />
+    </linearGradient>
+
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff4757;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#ff4757;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Main Background -->
+  <rect width="1200" height="600" fill="url(#heroBg)" />
+
+  <!-- Scanline Effect -->
+  <rect width="1200" height="600" fill="url(#heroBg)" class="scanline" />
+
+  <!-- Glowing Orbs -->
+  <circle cx="150" cy="100" r="120" fill="url(#coreGlow)" class="floating" />
+  <circle cx="1050" cy="500" r="100" fill="url(#coreGlow)" style="animation: float 5s ease-in-out infinite reverse;" />
+
+  <!-- Code Brackets Background -->
+  <g id="code-bg" opacity="0.15">
+    <text x="50" y="150" class="code-font" font-size="80" fill="#ff4757">{</text>
+    <text x="1100" y="450" class="code-font" font-size="80" fill="#00ffff">}</text>
+  </g>
+
+  <!-- Grid Lines -->
+  <g id="grid" stroke="#00ffff" stroke-width="1" opacity="0.15">
+    <line x1="0" y1="150" x2="1200" y2="150" stroke-dasharray="5,5" />
+    <line x1="0" y1="300" x2="1200" y2="300" stroke-dasharray="5,5" />
+    <line x1="0" y1="450" x2="1200" y2="450" stroke-dasharray="5,5" />
+    <line x1="300" y1="0" x2="300" y2="600" stroke-dasharray="5,5" />
+    <line x1="600" y1="0" x2="600" y2="600" stroke-dasharray="5,5" />
+    <line x1="900" y1="0" x2="900" y2="600" stroke-dasharray="5,5" />
+  </g>
+
+  <!-- Left Side: Code Example -->
+  <g id="code-example" class="floating">
+    <rect x="40" y="220" width="380" height="220" fill="none" stroke="url(#redGrad)" stroke-width="2" rx="10" class="glow" />
+    
+    <!-- Code Window Title -->
+    <rect x="40" y="220" width="380" height="35" fill="#1a1f3a" rx="10" />
+    <text x="60" y="243" class="code-font" font-size="12" fill="#00ff00">▶ main.py</text>
+    
+    <!-- Code Content -->
+    <text x="65" y="275" class="code-font" font-size="11" fill="#00ff00">def build_amazing():</text>
+    <text x="85" y="295" class="code-font" font-size="11" fill="#00ffff">    return "DeepCode"</text>
+    <text x="65" y="315" class="code-font" font-size="11" fill="#ff4757">result = build_amazing()</text>
+    <text x="65" y="335" class="code-font" font-size="11" fill="#ffaa00">print(result)  # Magic!</text>
+    <text x="65" y="355" class="code-font" font-size="11" fill="#00ff00"># Output: DeepCode</text>
+    <text x="65" y="375" class="code-font" font-size="11" fill="#888"># >>> DeepCode Python</text>
+    
+    <!-- Window Controls -->
+    <circle cx="60" cy="233" r="3" fill="#ff4757" />
+    <circle cx="78" cy="233" r="3" fill="#ffaa00" />
+    <circle cx="96" cy="233" r="3" fill="#00ff00" />
+  </g>
+
+  <!-- Center: Main Title -->
+  <g id="title">
+    <text x="600" y="200" text-anchor="middle" class="code-font" font-size="72" fill="#e0e0e0" letter-spacing="3" class="floating">
+      DeepCode
+    </text>
+    <text x="600" y="280" text-anchor="middle" class="code-font" font-size="60" fill="url(#redGrad)" letter-spacing="2" class="glow">
+      Python
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="600" y="330" text-anchor="middle" font-size="16" fill="#a0a0a0" letter-spacing="1">
+      Master Advanced Python • Build Extraordinary Things
+    </text>
+  </g>
+
+  <!-- Right Side: Statistics -->
+  <g id="stats" style="animation: float 4s ease-in-out infinite reverse;">
+    <rect x="780" y="220" width="380" height="220" fill="none" stroke="#00ffff" stroke-width="2" rx="10" />
+    
+    <!-- Stats Title -->
+    <text x="810" y="250" class="code-font" font-size="14" fill="#00ffff">▶ STATS</text>
+    <line x1="780" y1="260" x2="1160" y2="260" stroke="#00ffff" stroke-width="1" opacity="0.5" />
+    
+    <!-- Stat 1 -->
+    <text x="810" y="290" class="code-font" font-size="12" fill="#ff4757">█████████░ 500K+</text>
+    <text x="810" y="308" font-size="11" fill="#a0a0a0">Subscribers</text>
+    
+    <!-- Stat 2 -->
+    <text x="810" y="340" class="code-font" font-size="12" fill="#00ffff">████████░░ 200+</text>
+    <text x="810" y="358" font-size="11" fill="#a0a0a0">Tutorials</text>
+    
+    <!-- Stat 3 -->
+    <text x="810" y="390" class="code-font" font-size="12" fill="#00ff00">███████░░░ 50+</text>
+    <text x="810" y="408" font-size="11" fill="#a0a0a0">Projects</text>
+  </g>
+
+  <!-- Accent Lines -->
+  <g id="accents" stroke="url(#redGrad)" stroke-width="2" stroke-linecap="round">
+    <line x1="200" y1="150" x2="300" y2="150" class="glow" />
+    <line x1="900" y1="150" x2="1000" y2="150" class="glow" />
+    <line x1="200" y1="500" x2="300" y2="500" class="glow" opacity="0.5" />
+    <line x1="900" y1="500" x2="1000" y2="500" class="glow" opacity="0.5" />
+  </g>
+
+  <!-- Corner Decorations -->
+  <g id="corners" opacity="0.3">
+    <!-- Top Left -->
+    <line x1="10" y1="10" x2="50" y2="10" stroke="#ff4757" stroke-width="2" />
+    <line x1="10" y1="10" x2="10" y2="50" stroke="#ff4757" stroke-width="2" />
+    
+    <!-- Top Right -->
+    <line x1="1150" y1="10" x2="1190" y2="10" stroke="#00ffff" stroke-width="2" />
+    <line x1="1190" y1="10" x2="1190" y2="50" stroke="#00ffff" stroke-width="2" />
+    
+    <!-- Bottom Left -->
+    <line x1="10" y1="550" x2="10" y2="590" stroke="#00ffff" stroke-width="2" />
+    <line x1="10" y1="590" x2="50" y2="590" stroke="#00ffff" stroke-width="2" />
+    
+    <!-- Bottom Right -->
+    <line x1="1150" y1="590" x2="1190" y2="590" stroke="#ff4757" stroke-width="2" />
+    <line x1="1190" y1="550" x2="1190" y2="590" stroke="#ff4757" stroke-width="2" />
+  </g>
+
+  <!-- Call to Action Badge -->
+  <g id="cta">
+    <circle cx="600" cy="510" r="50" fill="none" stroke="url(#redGrad)" stroke-width="2" class="glow" />
+    <text x="600" y="520" text-anchor="middle" class="code-font" font-size="14" fill="#ff4757">SUBSCRIBE</text>
+  </g>
+
+  <!-- Version Badge -->
+  <text x="1150" y="30" text-anchor="end" class="code-font" font-size="12" fill="#00ffff" opacity="0.7">v2.0</text>
+</svg>
