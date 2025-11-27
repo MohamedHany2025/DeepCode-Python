@@ -428,12 +428,12 @@ const darkModeToggle = () => {
 console.log(`
 ╔═══════════════════════════════════════════════════════════╗
 ║                                                           ║
-║          Welcome to DeepCode Python Website!             ║
+║          Welcome to DeepCode Python Website!              ║
 ║                                                           ║
-║     Master Python. Build Extraordinary Things.           ║
+║     Master Python. Build Extraordinary Things.            ║
 ║                                                           ║
-║          Check out our projects and tutorials            ║
-║          Subscribe on YouTube for more content!          ║
+║          Check out our projects and tutorials             ║
+║          Subscribe on YouTube for more content!           ║
 ║                                                           ║
 ║                 Happy Coding! 🚀                          ║
 ║                                                           ║
