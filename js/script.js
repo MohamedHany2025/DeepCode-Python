@@ -328,7 +328,7 @@ const videoPlaceholder = document.querySelector('.video-placeholder');
 if (videoPlaceholder) {
     videoPlaceholder.addEventListener('click', function() {
         // You can embed an actual YouTube video here
-        alert('Click to watch the latest DeepCode Python video!\n\nEmbedded video would appear here.');
+        window.open('https://www.youtube.com/@DeepCode-Python/videos', '_blank');
     });
 
     videoPlaceholder.style.cursor = 'pointer';
@@ -442,3 +442,4 @@ console.log(`
 
 console.log('%cDeepCode Python', 'color: #e74c3c; font-size: 20px; font-weight: bold;');
 console.log('%cAdvanced Python Programming Tutorials & Projects', 'color: #ff4757; font-size: 14px;');
+console.log('%cYouTube: https://www.youtube.com/@DeepCode-Python', 'color: #3498db; font-size: 14px;');
